@@ -1,6 +1,10 @@
 # subconfig
 Browserify transform to substitute [config](https://github.com/lorenwest/node-config) variables using underscore templates.
 
+## Installation
+```
+npm install subconfig
+```
 ## Usage
 
 To be able to write in your client-side code, say, `var socket = Primus('<%= conf.ServerAddress %>')`, do
