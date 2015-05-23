@@ -3,7 +3,7 @@ Browserify transform to substitute [config](https://github.com/lorenwest/node-co
 
 ## Usage
 
-To be able to write in your client-side code, say, `<%= conf.ServerAddress %>`, do
+To be able to write in your client-side code, say, `var socket = Primus('<%= conf.ServerAddress %>')`, do
 ```shell
 $ browserify -t configify app.js > bundle.js
 ```
