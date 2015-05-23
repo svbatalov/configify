@@ -5,11 +5,9 @@ var _ = require('underscore');
 module.exports = function (filename, options) {
 
   var conf = {};
-  var p = options.p || options.prefix;
+  var p = options.p || options.prefix || true;
 
-  (p === true) && (conf = config) ||
-  (p && ( conf[p] = config) ) ||
-  (conf = { conf: config });
+  (p === true) && (conf = config) || (p && ( conf[p] = config) );
   
   var body = "";
 

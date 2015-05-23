@@ -8,7 +8,7 @@ describe('Browserify JS with underscore template', function () {
 
   it('should substitute variable from config/default.js', function (done) {
   
-    var src = "console.log('<%= conf.ServerAddress %>'); ";
+    var src = "console.log('<%= ServerAddress %>'); ";
     var s = new R; s.push(src); s.push(null);
 
     browserify(s)
@@ -23,7 +23,7 @@ describe('Browserify JS with underscore template', function () {
   it('should substitute variable from config/production.js', function (done) {
   
     process.env['NODE_ENV'] = 'production';
-    var src = "console.log('<%= conf.ServerAddress %>'); ";
+    var src = "console.log('<%= ServerAddress %>'); ";
     var s = new R; s.push(src); s.push(null);
     var configify = require.reload('../');
 
