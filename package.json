@@ -1,0 +1,37 @@
+{
+  "name": "configify",
+  "version": "0.1.0",
+  "description": "Browserify transform to substitute config variables using underscore templates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svbatalov/configify.git"
+  },
+  "keywords": [
+    "browserify",
+    "transform",
+    "config",
+    "underscore"
+  ],
+  "author": "Sergey Batalov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svbatalov/configify/issues"
+  },
+  "homepage": "https://github.com/svbatalov/configify",
+  "dependencies": {
+    "through": "^2.3.7",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.1",
+    "chai": "^2.3.0",
+    "config": "^1.13.0",
+    "istanbul": "^0.3.14",
+    "mocha": "^2.2.5"
+  }
+}
