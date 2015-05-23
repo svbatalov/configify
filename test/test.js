@@ -1,7 +1,6 @@
 var expect = require('chai').expect;
 var browserify = require('browserify');
 var R = require('stream').Readable;
-var path = require('path');
 
 describe('Browserify JS with underscore template', function () {
   
