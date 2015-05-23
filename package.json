@@ -1,5 +1,5 @@
 {
-  "name": "configify",
+  "name": "subconfig",
   "version": "0.1.0",
   "description": "Browserify transform to substitute config variables using underscore templates.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/svbatalov/configify.git"
+    "url": "https://github.com/svbatalov/subconfig.git"
   },
   "keywords": [
     "browserify",
@@ -20,9 +20,9 @@
   "author": "Sergey Batalov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/svbatalov/configify/issues"
+    "url": "https://github.com/svbatalov/subconfig/issues"
   },
-  "homepage": "https://github.com/svbatalov/configify",
+  "homepage": "https://github.com/svbatalov/subconfig",
   "dependencies": {
     "through": "^2.3.7",
     "underscore": "^1.8.3"
